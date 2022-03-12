@@ -1,0 +1,32 @@
+### 목록 조회
+
+GET http://localhost:8080/member
+
+### 단일 조회
+
+GET http://localhost:8080/member/1
+
+### 생성
+
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+"name": "test",
+"address": "test address"
+}
+
+### 갱신
+
+PUT http://localhost:8080/member/1
+Content-Type: application/json
+
+{
+  "name": "test change",
+  "address": "test address change"
+}
+
+### 삭제
+
+DELETE http://localhost:8080/member/1
+
