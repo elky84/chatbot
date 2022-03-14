@@ -16,6 +16,7 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -25,6 +26,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation 'org.hibernate:hibernate-jpamodelgen'
     implementation "io.springfox:springfox-boot-starter:3.0.0"
+    implementation 'com.github.shin285:KOMORAN:3.3.4'
+    implementation 'com.opencsv:opencsv:5.6'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {

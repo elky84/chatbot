@@ -1,0 +1,29 @@
+### 목록 조회
+
+GET http://localhost:8080/morpheme-analysis?size=20&page=1
+
+### 단일 조회
+
+GET http://localhost:8080/morpheme-analysis/1
+
+### CSV
+
+POST http://localhost:8080/morpheme-analysis/csv
+Content-Type: text/plain
+
+<@utf8 ./chat-data.csv
+
+### 학습
+
+POST http://localhost:8080/morpheme-analysis/learn
+Content-Type: application/json
+
+{
+"question": "팀운 망겜",
+"answer": "롤좀 그만해라"
+}
+
+### 삭제
+
+DELETE http://localhost:8080/morpheme-analysis/1
+

@@ -1,0 +1,19 @@
+### 분석
+
+POST http://localhost:8080/morpheme-analysis/test/analyze
+Content-Type: application/json
+
+
+{
+  "message": "힘들어서 결혼할까봐"
+}
+
+### 분해
+
+POST http://localhost:8080/morpheme-analysis/test/phrases
+Content-Type: application/json
+
+
+{
+  "message": "힘들어서 결혼할까봐"
+}
