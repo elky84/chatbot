@@ -28,8 +28,8 @@ dependencies {
     implementation "io.springfox:springfox-boot-starter:3.0.0"
     implementation 'com.github.shin285:KOMORAN:3.3.4'
     implementation 'com.opencsv:opencsv:5.6'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
